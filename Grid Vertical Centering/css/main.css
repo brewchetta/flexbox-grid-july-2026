@@ -1,0 +1,59 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	font-family: "Rokkitt", serif;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+p {
+	margin-top: 0;
+}
+header {
+	color: #fff;
+	background: 
+		linear-gradient( rgba(0,0,0, .4), rgba(0,0,0, .4) ),
+		url(../img/mountains@2x.jpg) center;
+	background-size: cover;
+	min-height: 100vh;
+}
+h1 {
+	font-family: "Vast Shadow";
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 21vw;
+	line-height: 1;
+	margin: 0;
+}
+h2 {
+	font-family: "Vast Shadow";
+	font-weight: normal;
+	font-size: 1.8rem;
+	color: #4d78a4;
+	text-transform: uppercase;
+	margin: 0;
+}
+.scroll-down {
+	opacity: .6;
+}
+main {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	max-width: 40em;
+	margin: auto;
+	padding: 1em;
+}
+@media (min-width: 600px) {
+	header h1 {
+		font-size: 9vw;
+	}
+}

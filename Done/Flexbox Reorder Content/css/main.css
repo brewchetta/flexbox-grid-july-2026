@@ -1,0 +1,86 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.navbar {
+	display: flex;
+	flex-wrap: wrap;
+	border: 8px solid gray;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.navbar li {
+	color: white;
+	padding: 10px;
+}
+.navbar .logo {
+	background: #0db8e8;
+}
+.navbar .excursions {
+	background: #0978e2;
+}
+.navbar .about {
+	background: #0000d5;
+}
+.navbar .contact {
+	background: #9700da;
+}
+.navbar .signup {
+	background: #dc00d4;
+}
+footer {
+	border: 8px solid gray;
+	margin-top: 20px;
+}
+footer div {
+	border: 2px solid red;
+	padding: 10px;
+}
+@media (max-width: 570px) {
+	.navbar .logo {
+		flex-basis: 100%;
+	}
+	.navbar li {
+		flex: 1 0 50%;
+		text-align: center;
+	}
+}
+@media (min-width: 571px) {
+	.navbar li {
+		order: 5;
+	}
+	.navbar .logo {
+		order: 1;
+		margin-right: auto;
+	}
+	.navbar .excursions {
+		order: 2;
+	}
+	.navbar .signup {
+		order: 3;
+	} 
+	footer .social {
+		order: 1;
+	}
+	footer {
+		display: flex;
+	}
+	footer .copyright {
+		flex-grow: 1;
+		text-align: center;
+	}
+}

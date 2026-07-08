@@ -1,0 +1,36 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.container {
+	border: 8px solid orange;
+}
+.container div {
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+.container div:nth-child(4n+1) {
+	background: #0db8e8;
+}
+.container div:nth-child(4n+2) {
+	background: #0978e2;
+}
+.container div:nth-child(4n+3) {
+	background: #0000d5;
+}
+.container div:nth-child(4n+4) {
+	background: #9700da;
+}

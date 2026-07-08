@@ -1,0 +1,67 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.navbar {
+	display: flex;
+	align-items: center;
+	border: 8px solid gray;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+}
+.navbar li {
+	margin: 10px;
+	color: white;
+	padding: 10px;
+}
+.navbar .logo {
+	flex: 0 0 160px;
+	margin-right: auto;
+	background: #0db8e8;
+}
+.navbar .hikes {
+	background: #0978e2;
+}
+.navbar .about {
+	background: #0000d5;
+}
+.navbar .contact {
+	background: #9700da;
+}
+.navbar .signup {
+	align-self: stretch;
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	background: #dc00d4;
+	font-size: 1.5em;
+}
+footer {
+	display: flex;
+	align-items: center;
+	border: 8px solid gray;
+	margin-top: 20px;
+}
+footer div {
+	border: 2px solid red;
+	padding: 10px;
+}
+footer .copyright {
+	flex-grow: 1;
+	align-self: flex-end;
+	text-align: center;
+}

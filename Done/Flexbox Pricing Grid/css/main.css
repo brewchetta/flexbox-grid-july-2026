@@ -1,0 +1,175 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	background: #555;
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.75;
+	margin: 0 0 30px 0;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+a {
+	color: #2985d1;
+	text-decoration: none;
+}
+h1, h2 {
+	font-family: "Alfa Slab One", "Open Sans", sans-serif;
+	font-weight: normal;
+	line-height: 1.2;
+}
+h1 {
+	font-size: 11vw;
+	margin: 10px 0;
+}
+h2 {
+	font-size: 26px;
+	margin: 0;
+}
+section .text-wrapper p:first-of-type {
+	font-weight: 700;
+	font-style: italic;
+	opacity: .4;
+	margin-top: 3px;
+}
+nav {
+	background: rgba(0,0,0, .33);
+	padding: 20px 5px;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+nav ul a {
+	color: #fff;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 2px 8px;
+	display: inline-block;
+	border: 2px solid transparent;  /* prevents a shift for when the hover border appears */
+}
+nav ul a:hover,
+nav ul a:focus {
+	color: #fff;
+	border-bottom: 2px dotted currentColor;
+}
+nav .logo {
+	border: 0;
+}
+header {
+	background: linear-gradient(rgba(0,201,255, .6), rgba(146,254,157, .6)), 
+				url(../img/masthead.jpg) right top / cover;
+	color: #fff;
+}
+header img {
+	width: 160px;
+}
+.masthead {
+	padding: 5% 2%;
+	text-align: center;
+}
+.masthead p {
+	font-size: 30px;
+	line-height: 1.2;
+	font-weight: 300;
+	margin: 0;
+}
+header, section {
+	box-shadow: 0 5px 30px rgba(0,0,0, 0.6);
+}
+section {
+	background: #fff;
+	margin: 15px;
+	margin-bottom: 0;
+}
+section .text-wrapper {
+	padding: 20px;
+}
+section .text-wrapper > :last-child {
+	margin-bottom: 0;
+}
+.price-list .popular {
+	line-height: 1.5;
+	margin: 0;
+	background: #02caf2;
+	color: #fff;
+	padding: 10px 20px;
+	text-transform: uppercase;
+}
+.book-now-btn {
+	color: #fff;
+	background: #ff6924;
+	padding: 3px 16px;
+	display: inline-block;
+	border-radius: 40px;
+}
+.book-now-btn:hover, .book-now-btn:focus {
+	border: 0;
+	background: #fa4f00;
+}
+footer {
+	margin-top: 45px;
+	color: #ccc;
+	text-align: center;
+	font-weight: 300;
+}
+@media (max-width: 599px) {
+	nav {
+		text-align: center;
+	}
+	nav ul {
+		margin-top: 10px;
+	}
+}
+@media (min-width: 600px) {
+	h1 {
+		font-size: clamp(50px, 7.5vw, 90px);
+	}
+	main {
+		max-width: 800px;
+		margin: 30px auto;
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		padding: 20px 30px;
+	}
+	nav .logo {
+		margin-right: auto;
+	}
+	nav li:last-of-type a {
+		margin-right: 0;
+	}
+}
+@media (min-width: 1000px) {
+	body {
+		margin: 30px;
+	}
+	h1 {
+		font-size: 6vw;
+	}
+	main {
+		display: flex;
+		gap: 30px;
+		align-items: center;
+		max-width: 1310px;
+		margin: 30px auto;
+	}
+	section {
+		flex-basis: 33.33%;
+		margin: 0;
+	}
+	section.secondary {
+		order: -1;
+	}
+}

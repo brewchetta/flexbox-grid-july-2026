@@ -1,0 +1,110 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+:root {
+	font-size: 1.125rem;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	margin: 20px auto;
+	font-family: "Fauna One", serif;
+	font-size: 1rem;
+	line-height: 1.9;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+h1 {
+	font-family: "Abril Fatface", serif;
+	font-weight: 400;
+	font-size: 15vw;
+	line-height: 1;
+	margin: 0;
+}
+p {
+	margin: 0;
+}	
+a {
+	color: hsl(219, 100%, 60%);
+	text-decoration: none;
+}
+a:hover {
+	color: hsl(219, 80%, 70%);
+}
+article {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: 1fr;
+}
+article > figure {
+	margin: 0;
+	grid-column: 1 / -1;
+}
+article > figure > img {
+	width: 100%;
+}
+article > figure > figcaption {
+	font-family: Vollkorn, serif;
+	font-style: italic;
+	font-weight: 600;
+	margin: .7em;
+	text-align: center;
+}
+article > blockquote {
+	grid-column: 1 / -1;
+	max-width: 1120px;
+	margin: auto;
+	padding: 20px;
+	font-family: Vollkorn, serif;
+	font-style: italic;
+	font-size: 2rem;
+	line-height: 1.4;
+	text-align: center;
+}
+article > aside {
+	font-size: .75rem;
+	border: 0 solid #bbb;
+	border-left-width: 1px;
+	padding: 0 1em;
+}
+@media (max-width: 699px) {
+	article > * {
+		margin: 0 20px;
+	}
+}
+@media (min-width: 700px) {
+	h1 {
+		font-size: 8vw;
+	}
+	article {
+		grid-template-columns: 1fr 4fr 1fr;
+	}
+	article > * {
+		grid-column: 2 / -2;
+	}
+	article > aside {
+		max-width: 260px;
+	}
+	article > aside.right {
+		grid-column: span 1 / -1;
+		align-self: start;
+	}
+	article > aside.left {
+		grid-column: 1 / span 1;
+		align-self: start;
+		justify-self: end;
+		text-align: right;
+		border-left-width: 0;
+		border-right-width: 1px;
+	}
+}
+@media (min-width: 950px) {
+	article {
+		grid-template-columns: 1fr 690px 1fr;
+	}
+}

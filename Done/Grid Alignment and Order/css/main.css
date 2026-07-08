@@ -1,0 +1,37 @@
+*, *::before, *::after { 
+	box-sizing: border-box;
+}
+html {
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+body {
+	margin: 30px;
+	font-family: sans-serif;
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+.logo-wrapper {
+	background: #d7e1ff;
+}
+.gallery {
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(4, 175px);
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+.gallery img {
+	order: 3;
+}
+.gallery .nike {
+	order: 1;
+}
+.gallery .hermes {
+	order: 2;
+}
