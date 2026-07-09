@@ -22,6 +22,7 @@ header {
 	color: #fff;
 	background: url(../img/mountains@2x.jpg) center;
 	background-size: cover;
+	min-height: 100vh;
 }
 h1 {
 	font-family: "Vast Shadow";

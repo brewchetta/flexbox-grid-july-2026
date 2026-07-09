@@ -81,6 +81,20 @@ footer {
 
 	/* flex- */
 	flex-wrap: wrap;
+
+}
+
+/* reorder content */
+.address {
+	order: 2;
+}
+
+.copyright {
+	order: 1;
+}
+
+.social {
+	order: 3;
 }
 
 /* PREVIOUS STYLING */
