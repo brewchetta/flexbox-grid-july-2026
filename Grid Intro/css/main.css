@@ -1,3 +1,37 @@
+/* GRID STYLING */
+
+.container {
+	display: grid;
+
+	/* setting up a series of columns + rows */
+
+	/* create 3 columns of different widths */
+	/* grid-template-columns: 50px 100px 150px; */
+
+	/* fr is a unit that divides up the space (excluding absolute units like px) */
+	/* 2fr would take 2x the space as 1fr... 3fr would take 3x the space as 1fr */
+	/* grid-template-columns: 1fr 1fr 2fr; */
+
+	/* repeat allows us to create identical column/row sizes quickly */
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(4, 1fr);
+
+	/* create 3 rows of different widths */
+	grid-template-rows: 50px 100px 150px;
+
+	/* do new items get added in the direction of a new row or a new column? */
+	/* in this case additional rows get added */
+	grid-auto-flow: row;
+
+	/* any overflow (extra) items will be 200px tall in a new row */
+	grid-auto-rows: 200px;
+
+	/* gap is the distance between each item */
+	gap: 10px;
+}
+
+/* PREVIOUS STYLING */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
