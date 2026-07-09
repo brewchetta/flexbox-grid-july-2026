@@ -1,3 +1,90 @@
+/* FLEXBOX STYLING */
+
+/* navbar is a flex container */
+/* it's in charge of determining various flexbox rules */
+/* any CHILDREN inside of it abide by those flex rules */
+.navbar {
+	display: flex;
+	
+	/* spacing / positioning along the major axis */
+	/* major axis --> left to right */
+	justify-content: right;
+	/* start/left end/right center space-between space-around space-evenly */
+
+	/* space / positioning along the secondary axis */
+	/* secondary axis --> top to bottom */
+	align-items: center;
+	/* by default align-items is set to `stretch` */
+	/* stretch start end center */
+
+	/* the major axis is whatever direction the flexbox is going in */
+	/* by default major is row (left to right) */
+	flex-direction: row;
+
+	height: 600px;
+}
+
+.contact {
+	/* margin auto will push this element away from other elements and create as much space between them as it can */
+	/* margin-left: auto;
+	margin-right: auto; */
+
+	/* flex-grow tells the element to take up additional space */
+	/* if nothing is pushing against the element it will take up ALL the additional space it can */
+	/* flex-grow grows along the major axis */
+	/* for cross-axis growth we can set that with height or something along those lines */
+	flex-grow: 2;
+	height: 50%;
+
+	/* turn the contact item into a another flex container */
+	/* justify-content and align-items center will perfectly center the word inside of it */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.signup {
+	/* this can also be used to push elements away from the edge of the screen */
+	/* margin-right: auto; */
+
+	/* flex-grow: 1; */
+
+	/* align-self overrides align-items for this element */
+	align-self: start;
+}
+
+.hikes {
+	/* don't attempt to take extra space and grow */
+	/* this is more or less the default */
+	flex-grow: 0;
+
+	/* flex-shrink 0 tells an element not to shrink as the page gets smaller */
+	flex-shrink: 0;
+}
+
+.logo {
+	align-self: end;
+
+	/* flex-basis tells our flexbox what the natural size for an element is */
+	flex-basis: 500px;
+
+	/* flex-grow flex-shrink flex-basis */
+	flex: 2 0 auto;
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly;
+
+	min-width: 200px;
+
+	/* flex- */
+	flex-wrap: wrap;
+}
+
+/* PREVIOUS STYLING */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
