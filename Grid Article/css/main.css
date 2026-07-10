@@ -1,3 +1,62 @@
+/* OUR STYLING */
+
+article {
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr;
+	gap: 30px;
+}
+
+/* get all direct descendants (direct children as opposed to grandchildren) */
+article > * {
+	/* everything goes down the center to start with */
+	grid-column: 2 / 3;
+}
+
+p {
+	margin: 0;
+}
+
+article > figure {
+	/* override the normal grid */
+	/* go from the left side of the grid all the way to the right side */
+	grid-column: 1 / -1;
+	margin: 0;
+}
+
+article > blockquote {
+	grid-column: 1 / -1;
+	max-width: 1000px;
+	margin: auto;
+	padding: 20px;
+}
+
+article > aside {
+	max-width: 260px;
+}
+
+article > aside.right {
+	grid-column: 3 / -1;
+	align-self: center;
+	justify-self: start;
+}
+
+article > aside.left {
+	grid-column: 2 / 1;
+	align-self: center;
+	text-align: right;
+	border-left: none;
+	border-right: solid #bbb 1px;
+	justify-self: end;
+}
+
+@media (max-width: 699px) {
+	article > * {
+		margin: 0 20px;
+	}
+}
+
+/* PREVIOUS STYLING */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
