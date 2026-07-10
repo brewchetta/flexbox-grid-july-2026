@@ -1,3 +1,30 @@
+/* GRID STYLING */
+
+.gallery {
+	display: grid;
+	gap: 15px;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-auto-flow: dense;
+	background: url(../img/leaf-background.jpg);
+	padding: 15px;
+}
+
+.big {
+	/* go across two columns & two rows */
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+img[src*="apples"] {
+	order: 1;
+}
+
+img[src*="lemons"] {
+	order: 1;
+}
+
+/* PREVIOUS STYLING */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
