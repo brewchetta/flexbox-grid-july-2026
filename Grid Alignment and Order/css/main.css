@@ -1,3 +1,54 @@
+/* GRID STYLING */
+
+.gallery {
+	padding: 5px;
+
+	display: grid;
+	gap: 50px;
+	grid-template-columns: repeat(4, 1fr);
+
+	/* justify/align items moves them inside their cells */
+	/* this only really matters if the different items are different widths/heights */
+	justify-items: center;
+	align-items: center;
+
+	/* align-content move the cells up / down / center / stretch in order to account for any additional vertical space (should also work for justify-content) */
+	align-content: center;
+	height: 70vh; 
+}
+
+.squarespace {
+	align-self: end;
+	
+	order: -1;
+}
+
+
+.dior {
+	order: 1;
+}
+
+.logo-wrapper {
+	order: 2
+}
+
+.zara {
+	order: 3
+}
+
+.fendi {
+	order: 4;
+}
+
+.via {
+	/* align/justify self works like align/justify-items but for one specific item */
+	justify-self: end;
+
+	order: 5;
+}
+
+/* PREVIOUS STYLING */
+
 *, *::before, *::after { 
 	box-sizing: border-box;
 }
