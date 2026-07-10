@@ -1,0 +1,19 @@
+Afternoon prompt:
+
+Begin building a website from scratch for a topic of your choice. This should be a single page website (one html file) and should include these items:
+
+1. A navbar affixed to the top of the screen which follows the users as they scroll down the page. Use position:sticky to achieve this. The navbar should use a flexbox for its various links. The links may be purely decorative.
+
+2. A hero image at the top of the screen that contains your h1 title. It's recommended you use a background-image property to achieve this.
+
+3. A footer at the bottom of the screen.
+
+4. Create a column at the center of the screen for your main content. You can achieve this with grid or with margin auto.
+
+5. Add sections of content. You may use lorem ipsum content if you don't want to write your own.
+
+6. Create a section with a grid. You may do this to create a calendar, a picture grid similar to what we've done in class, a map, or anything else you can think up. The ideal here is that you're creating a grid somewhere on the page.
+
+7. Create one media query to handle an issue you find on small screens. A good breakpoint could be max-width: 700px.
+
+8. OPTIONAL STRETCH BONUS: Use bootstrap somewhere!
